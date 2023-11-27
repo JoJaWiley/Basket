@@ -1,0 +1,10 @@
+db:
+    url: jdbc:h2:mem:database_user;DB_CLOSE_ON_EXIT=FALSE
+    username: SA
+    password:
+
+spring:
+    datasource:
+        url: ${db.url:}
+        username: ${db.username}
+        password: ${db.password}
